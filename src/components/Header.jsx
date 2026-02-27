@@ -1,20 +1,11 @@
 const reactDescription = ["Fundamental", "Crucial", "Important"];
+import reactImg from "../assets/react-core-concepts.png";
 
 function genRandomInt(max) {
   return Math.floor(Math.random() * (max + 1));
 }
 
-function CoreConcepts({ image, title, description }) {
-  return (
-    <li>
-      <img src={image} alt={title} />
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </li>
-  );
-}
-
-function Header() {
+export default function Header() {
   const description = reactDescription[genRandomInt(2)];
 
   return (

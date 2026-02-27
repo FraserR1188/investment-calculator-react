@@ -1,5 +1,5 @@
-import reactImg from "./assets/react-core-concepts.png";
 import { CORE_CONCEPTS } from "./data.js";
+import Header from "./components/Header.jsx";
 
 function App() {
   return (
