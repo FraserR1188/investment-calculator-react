@@ -25,6 +25,7 @@ export default function UserInput() {
           <input
             type="number"
             required
+            value={userInput.initialInvestment}
             onChange={(e) =>
               handleChange("initialInvestment", parseFloat(e.target.value))
             }
@@ -32,17 +33,36 @@ export default function UserInput() {
         </p>
         <p>
           <label htmlFor="">Annual Investment</label>
-          <input type="number" required />
+          <input
+            type="number"
+            required
+            value={userInput.annualInvestment}
+            onChange={(e) =>
+              handleChange("annualInvestment", parseFloat(e.target.value))
+            }
+          />
         </p>
       </div>
       <div className="input-group">
         <p>
           <label htmlFor="">Expected Return</label>
-          <input type="number" required />
+          <input
+            type="number"
+            required
+            value={userInput.expectedReturn}
+            onChange={(e) =>
+              handleChange("expectedReturn", parseFloat(e.target.value))
+            }
+          />
         </p>
         <p>
           <label htmlFor="">Duration</label>
-          <input type="number" required />
+          <input
+            type="number"
+            required
+            value={userInput.duration}
+            onChange={(e) => handleChange("duration", parseInt(e.target.value))}
+          />
         </p>
       </div>
     </section>
